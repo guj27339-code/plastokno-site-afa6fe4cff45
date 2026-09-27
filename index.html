@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Пластокно — остекление балконов и окон в Челябинске</title>
+  <meta name="description" content="Остекление, утепление и отделка балконов, лоджий и окон в Челябинске. Реальные работы, консультация и точный расчёт после замера.">
+  <meta name="theme-color" content="#11161b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Пластокно — балкон, которым хочется пользоваться каждый день">
+  <meta property="og:description" content="Остекление, утепление и отделка балконов и лоджий в Челябинске.">
+  <meta property="og:image" content="assets/case-komsomolsky.jpg">
+  <meta property="og:url" content="https://plastokno74.ru/">
+  <style>
+    :root{--ink:#11161b;--ink-soft:#20282e;--paper:#f4f0e8;--paper-2:#e9e4da;--line:rgba(17,22,27,.14);--accent:#f28a3d;--accent-2:#d8a84e;--muted:#68737a;--white:#fff;--shadow:0 22px 70px rgba(17,22,27,.14);--radius:28px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.5;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .progress{position:fixed;left:0;top:0;z-index:1000;width:100%;height:4px;background:transparent}
+    .progress i{display:block;width:0;height:100%;background:var(--accent);transition:width .12s linear}
+    .container{width:min(1180px,calc(100% - 48px));margin:0 auto}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{letter-spacing:-.05em}
+    h1{max-width:770px;margin-bottom:24px;font-size:clamp(2.9rem,7vw,6.9rem);line-height:.92;font-weight:800}
+    h2{margin-bottom:20px;font-size:clamp(2.2rem,4.8vw,4.8rem);line-height:.95;font-weight:800}
+    h3{font-size:1.3rem;line-height:1.05;margin-bottom:12px}
+    .muted{color:var(--muted)}
+    .topline{background:var(--ink);color:#dce2e4;font-size:.78rem;letter-spacing:.04em}
+    .topline .container{display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:34px}
+    .topline a{color:var(--white);font-weight:700}
+    header{position:sticky;top:4px;z-index:50;background:rgba(244,240,232,.86);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:box-shadow .3s,border-color .3s}
+    header.scrolled{border-color:var(--line);box-shadow:0 8px 30px rgba(17,22,27,.08)}
+    .nav{display:flex;justify-content:space-between;align-items:center;min-height:74px;gap:22px}
+    .brand{display:inline-flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.05em;font-size:1.35rem}
+    .brand-mark{display:grid;place-items:center;width:36px;height:36px;border:2px solid var(--ink);transform:skew(-12deg);font-size:1.1rem}
+    .brand-mark span{transform:skew(12deg)}
+    .nav-links{display:flex;gap:24px;color:var(--muted);font-size:.92rem;font-weight:700}
+    .nav-links a{transition:color .2s}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-contact{display:flex;align-items:center;gap:12px;font-size:.9rem;font-weight:800}
+    .nav-contact .phone{white-space:nowrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 20px;border:1px solid transparent;border-radius:999px;font-weight:800;transition:transform .25s,box-shadow .25s,background .25s,color .25s,border-color .25s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(17,22,27,.13)}
+    .btn-dark{background:var(--ink);color:var(--white)}
+    .btn-accent{background:var(--accent);color:var(--ink)}
+    .btn-ghost{background:transparent;border-color:rgba(17,22,27,.22)}
+    .btn-light{background:var(--paper);color:var(--ink)}
+    .hero{position:relative;padding:82px 0 58px;background:var(--paper);overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 85% 15%,rgba(242,138,61,.2),transparent 28%),linear-gradient(120deg,transparent 25%,rgba(17,22,27,.04) 25.1%,transparent 25.3%)}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:end}
+    .hero-copy{position:relative;z-index:2;padding:26px 0 36px}
+    .hero-copy .lead{max-width:560px;color:var(--muted);font-size:1.17rem;margin-bottom:30px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:.88rem;font-weight:700}
+    .hero-meta strong{color:var(--ink)}
+    .hero-media{position:relative;min-height:590px}
+    .hero-photo{height:590px;width:100%;object-fit:cover;border-radius:36px 36px 8px 36px;box-shadow:var(--shadow);filter:saturate(.88) contrast(1.04)}
+    .hero-label{position:absolute;right:-22px;bottom:28px;width:min(260px,55%);padding:20px;background:var(--ink);color:var(--white);border-radius:20px;box-shadow:var(--shadow);animation:float 5s ease-in-out infinite}
+    .hero-label b{display:block;color:var(--accent);font-size:2.1rem;line-height:1}
+    .hero-label small{display:block;margin-top:8px;color:#b7c0c3}
+    .hero-note{position:absolute;left:-22px;top:38px;width:190px;padding:15px 16px;background:var(--accent);border-radius:18px 18px 18px 4px;font-weight:800;transform:rotate(-5deg);animation:drift 7s ease-in-out infinite}
+    @keyframes float{50%{transform:translateY(-10px)}}
+    @keyframes drift{50%{transform:rotate(-2deg) translateY(8px)}}
+    .marquee{overflow:hidden;background:var(--ink);color:var(--paper);border-block:1px solid rgba(255,255,255,.08)}
+    .marquee-track{display:flex;gap:34px;width:max-content;padding:14px 0;animation:marquee 24s linear infinite;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .marquee-track span{display:inline-flex;align-items:center;gap:34px;white-space:nowrap}
+    .marquee-track span::after{content:"✳";color:var(--accent)}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    section{padding:120px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px}
+    .section-head p{max-width:440px;color:var(--muted);margin-bottom:4px}
+    .trust{padding:84px 0 110px;background:var(--ink);color:var(--paper)}
+    .trust-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;align-items:end}
+    .trust h2{max-width:620px;margin-bottom:0}
+    .trust h2 em{color:var(--accent);font-style:normal}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+    .metric{padding:24px 20px;background:var(--ink)}
+    .metric b{display:block;font-size:2.5rem;line-height:1;margin-bottom:8px;color:var(--accent)}
+    .metric span{display:block;color:#aeb8bb;font-size:.88rem}
+    .selector{background:var(--paper-2)}
+    .selector-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+    .selector-intro p{max-width:500px;color:var(--muted);font-size:1.05rem}
+    .choice-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+    .choice{padding:18px 18px;border:1px solid var(--line);background:transparent;text-align:left;border-radius:18px;font-weight:800;transition:background .25s,border-color .25s,transform .25s}
+    .choice:hover{transform:translateY(-3px)}
+    .choice.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+    .choice small{display:block;margin-top:6px;font-weight:600;color:var(--muted)}
+    .choice.active small{color:#bfc7c9}
+    .solution-card{position:relative;overflow:hidden;min-height:520px;background:var(--ink);color:var(--paper);border-radius:32px;box-shadow:var(--shadow)}
+    .solution-image{height:270px;width:100%;object-fit:cover;opacity:.9;transition:opacity .3s,transform .8s}
+    .solution-card:hover .solution-image{transform:scale(1.05)}
+    .solution-body{padding:28px 30px 30px}
+    .solution-body h3{font-size:2.1rem;margin-bottom:10px}
+    .solution-body p{max-width:540px;color:#bec7c9;margin-bottom:22px}
+    .solution-tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{padding:8px 11px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:#dce3e4;font-size:.78rem;font-weight:700}
+    .services{background:var(--paper)}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .service{position:relative;min-height:290px;padding:24px;background:var(--paper-2);border-radius:24px;overflow:hidden;transition:transform .35s,background .35s,color .35s}
+    .service::after{content:"↗";position:absolute;right:22px;bottom:19px;font-size:1.5rem;opacity:.45;transition:transform .3s}
+    .service:hover{background:var(--ink);color:var(--paper);transform:translateY(-8px)}
+    .service:hover::after{transform:translate(5px,-5px);color:var(--accent)}
+    .service p{color:var(--muted);font-size:.92rem}
+    .service:hover p{color:#bdc7ca}
+    .service-index{display:block;color:var(--accent);font-size:.8rem;font-weight:900;letter-spacing:.12em;margin-bottom:85px}
+    .work-strip{background:var(--ink);color:var(--paper)}
+    .work-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-template-rows:240px 240px;gap:12px}
+    .work-card{position:relative;overflow:hidden;border-radius:24px;background:#243038}
+    .work-card:first-child{grid-row:span 2}
+    .work-card img{height:100%;width:100%;object-fit:cover;transition:transform .8s,filter .4s}
+    .work-card:hover img{transform:scale(1.08);filter:saturate(1.12)}
+    .work-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(17,22,27,.86))}
+    .work-caption{position:absolute;z-index:1;left:20px;right:20px;bottom:18px}
+    .work-caption small{display:block;color:#c8d0d2;margin-bottom:5px}
+    .work-caption b{font-size:1.1rem}
+    .section-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--accent);font-weight:800}
+    .steps{background:var(--paper-2)}
+    .steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .step{position:relative;padding:26px 20px 30px 0;margin-right:20px;border-right:1px solid var(--line)}
+    .step:last-child{border-right:0}
+    .step b{display:block;color:var(--accent);font-size:2rem;margin-bottom:50px}
+    .step p{color:var(--muted);font-size:.9rem;margin-bottom:0}
+    .proof{background:var(--paper)}
+    .proof-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:start}
+    .rating{display:flex;align-items:center;gap:14px;margin-top:28px}
+    .rating-score{font-size:4rem;line-height:1;font-weight:900;letter-spacing:-.08em}
+    .stars{color:var(--accent);letter-spacing:.12em;font-size:1.2rem}
+    .rating small{display:block;color:var(--muted)}
+    .review-list{display:grid;gap:14px}
+    .review{padding:24px;background:var(--paper-2);border-radius:20px;border-left:3px solid var(--accent)}
+    .review p{font-size:1.08rem;line-height:1.35;margin-bottom:15px}
+    .review footer{display:flex;justify-content:space-between;gap:14px;color:var(--muted);font-size:.8rem;font-weight:700}
+    .materials{background:var(--ink);color:var(--paper)}
+    .materials-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:75px;align-items:center}
+    .materials p{max-width:520px;color:#bcc6c8}
+    .brand-cloud{display:flex;flex-wrap:wrap;gap:10px}
+    .brand-pill{padding:13px 16px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:#e8edee;font-weight:800}
+    .faq{background:var(--paper-2)}
+    details{border-top:1px solid var(--line);padding:19px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{display:flex;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font-size:1.15rem;font-weight:800}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";color:var(--accent);font-size:1.5rem;line-height:1}
+    details[open] summary::after{content:"−"}
+    details p{max-width:720px;color:var(--muted);margin:12px 0 2px}
+    .cta{position:relative;overflow:hidden;background:var(--accent);color:var(--ink)}
+    .cta::before{content:"";position:absolute;width:500px;height:500px;right:-120px;top:-280px;border:1px solid rgba(17,22,27,.2);border-radius:50%;box-shadow:0 0 0 40px rgba(17,22,27,.05),0 0 0 80px rgba(17,22,27,.04)}
+    .cta-grid{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:end}
+    .cta h2{max-width:660px}
+    .cta p{max-width:500px;margin-bottom:0;color:#4f3320}
+    .contact-card{padding:26px;background:rgba(255,255,255,.28);border:1px solid rgba(17,22,27,.12);border-radius:24px}
+    .contact-card a{display:block;font-weight:900;font-size:1.2rem;margin:6px 0}
+    .contact-card small{display:block;color:#6b452a;margin-top:10px}
+    .contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .footer{padding:34px 0 105px;background:var(--ink);color:#c4cdd0}
+    .footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:end}
+    .footer .brand{color:var(--paper)}
+    .footer p{margin:12px 0 0;color:#8f9ba0;font-size:.86rem}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:.86rem;font-weight:700}
+    .mobile-bar{display:none}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.is-visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.delay-4{transition-delay:.4s}
+    .modal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px;background:rgba(17,22,27,.7);opacity:0;pointer-events:none;transition:opacity .3s}
+    .modal.open{opacity:1;pointer-events:auto}
+    .modal-card{position:relative;width:min(560px,100%);padding:30px;background:var(--paper);border-radius:26px;box-shadow:var(--shadow);transform:translateY(18px);transition:transform .35s}
+    .modal.open .modal-card{transform:none}
+    .modal-close{position:absolute;right:15px;top:12px;width:38px;height:38px;border:0;background:transparent;font-size:1.6rem}
+    .modal-card h3{font-size:2rem;margin-bottom:8px}
+    .modal-card p{color:var(--muted)}
+    .form-grid{display:grid;gap:12px}
+    .field{display:grid;gap:7px;font-weight:800;font-size:.85rem}
+    .field input,.field select,.field textarea{width:100%;padding:13px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;outline:none;color:var(--ink)}
+    .field textarea{min-height:90px;resize:vertical}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,138,61,.18)}
+    .form-message{display:none;padding:15px 0 0;color:var(--muted);font-size:.88rem}
+    .form-message.show{display:block}
+    .form-out{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .noscript{padding:10px 16px;background:#fff3c7;color:#534514;text-align:center;font-size:.85rem}
+    @media (max-width:980px){
+      .nav-links{display:none}.hero-grid,.selector-grid,.trust-grid,.proof-grid,.materials-grid,.cta-grid{grid-template-columns:1fr;gap:34px}.hero-copy{padding-bottom:0}.hero-media{min-height:460px}.hero-photo{height:460px}.hero-label{right:12px}.hero-note{left:12px}.service-grid{grid-template-columns:1fr 1fr}.work-grid{grid-template-columns:1.2fr .8fr;grid-template-rows:220px 220px}.work-card:first-child{grid-row:span 2}.steps-grid{grid-template-columns:1fr 1fr;gap:0}.step:nth-child(2){border-right:0}.step:nth-child(3){border-top:1px solid var(--line)}.step:nth-child(4){border-top:1px solid var(--line)}.step:nth-child(5){border-top:1px solid var(--line);grid-column:span 2}.footer-grid{align-items:start;flex-direction:column}
+    }
+    @media (max-width:680px){
+      body{font-size:16px}.container{width:min(100% - 32px,560px)}.topline .container{min-height:32px;font-size:.7rem}.topline .container span{display:none}.topline .container{justify-content:center}.nav{min-height:64px}.nav-contact .phone{display:none}.nav-contact .btn{min-height:42px;padding:0 14px;font-size:.82rem}.hero{padding:58px 0 38px}.hero-grid{gap:24px}.hero-copy .lead{font-size:1.05rem}.hero-actions .btn{width:100%}.hero-meta{gap:12px;font-size:.78rem}.hero-media{min-height:350px}.hero-photo{height:350px;border-radius:24px 24px 6px 24px}.hero-label{right:10px;bottom:14px;width:190px;padding:15px}.hero-label b{font-size:1.7rem}.hero-note{top:16px;left:8px;width:156px;font-size:.78rem;padding:12px}.marquee-track{font-size:.68rem;padding:12px 0}.section-head{display:block;margin-bottom:30px}.section-head p{margin-top:12px}.trust{padding:70px 0 76px}.trust-grid{gap:32px}.metrics{grid-template-columns:1fr}.metric{padding:18px}.metric b{font-size:2rem}.choice-list{grid-template-columns:1fr}.solution-card{min-height:0}.solution-image{height:205px}.solution-body{padding:22px}.solution-body h3{font-size:1.7rem}.service-grid{grid-template-columns:1fr}.service{min-height:220px}.service-index{margin-bottom:54px}.work-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}.work-card:first-child{grid-column:span 2;grid-row:auto}.work-caption{left:14px;right:14px;bottom:12px}.work-caption b{font-size:.95rem}.steps-grid{grid-template-columns:1fr}.step{border-right:0!important;border-top:1px solid var(--line)!important;margin-right:0;padding:20px 0}.step:first-child{border-top:0!important}.step:nth-child(5){grid-column:auto}.step b{margin-bottom:25px}.proof-grid,.materials-grid{gap:38px}.rating-score{font-size:3.3rem}.review{padding:20px}.review p{font-size:1rem}.cta-grid{gap:26px}.cta .btn{width:100%}.contact-actions .btn{width:100%}.footer{padding-bottom:98px}.footer-links{gap:14px}.mobile-bar{position:fixed;z-index:80;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;left:0;right:0;bottom:0;padding:7px 7px max(7px,env(safe-area-inset-bottom));background:rgba(17,22,27,.95);backdrop-filter:blur(18px)}.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:46px;color:var(--paper);font-size:.68rem;font-weight:800}.mobile-bar a:first-child{color:var(--accent)}section{padding:80px 0}
+    }
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"Пластокно",
+    "url":"https://plastokno74.ru/",
+    "telephone":["+7-351-238-77-55","+7-951-818-29-70"],
+    "email":"74plastokno@mail.ru",
+    "address":{"@type":"PostalAddress","streetAddress":"ул. Чайковского, 15","addressLocality":"Челябинск","addressCountry":"RU"},
+    "areaServed":"Челябинск",
+    "sameAs":["https://vk.com/74plastokno"],
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"304","ratingCount":"314","bestRating":"5","worstRating":"1"},
+    "hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги","itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Остекление балконов и лоджий"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Утепление и отделка балконов"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Пластиковые окна"}}
+    ]}
+  }
+  </script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <div class="topline"><div class="container"><span>Челябинск · окна · балконы · лоджии</span><a href="tel:+73512387755">8 (351) 238-77-55</a></div></div>
+  <header id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Пластокно — на главную"><span class="brand-mark"><span>П</span></span>пластокно</a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="#solutions">Решения</a><a href="#works">Работы</a><a href="#process">Как работаем</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="nav-contact"><a class="phone" href="tel:+79518182970">8 (951) 818-2970</a><button class="btn btn-dark js-open-modal" type="button">Рассчитать</button></div>
+    </div>
+  </header>
+  <main id="top">
+    <noscript><div class="noscript">Для заявок без JavaScript позвоните по номеру <a href="tel:+73512387755">8 (351) 238-77-55</a>.</div></noscript>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Балконы и окна · Челябинск</div>
+          <h1>Балкон, которым хочется пользоваться каждый день.</h1>
+          <p class="lead">Остекление, утепление и отделка под вашу задачу. Начинаем с консультации и точного замера, чтобы решение подошло именно вашему дому.</p>
+          <div class="hero-actions"><button class="btn btn-accent js-open-modal" type="button">Подобрать решение <span>↗</span></button><a class="btn btn-ghost" href="tel:+73512387755">Позвонить</a></div>
+          <div class="hero-meta"><span><strong>4,9</strong> · 314 оценок в 2ГИС</span><span>ул. Чайковского, 15</span></div>
+        </div>
+        <div class="hero-media reveal delay-2">
+          <img class="hero-photo" src="assets/case-komsomolsky.jpg" alt="Отделка лоджии: реальная работа Пластокно на Комсомольском проспекте">
+          <div class="hero-note">Реальные работы<br>без стоковых фото</div>
+          <div class="hero-label"><b>4,9</b><small>рейтинг компании<br>в 2ГИС</small></div>
+        </div>
+      </div>
+    </section>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>точный замер</span><span>собственное производство</span><span>аккуратный монтаж</span><span>реальные проекты</span><span>точный замер</span><span>собственное производство</span><span>аккуратный монтаж</span><span>реальные проекты</span></div></div>
+
+    <section class="trust" id="trust">
+      <div class="container trust-grid">
+        <div class="reveal"><div class="eyebrow">Доверие</div><h2>Решение начинается с <em>понимания</em> задачи.</h2></div>
+        <div class="metrics reveal delay-2"><div class="metric"><b>4,9</b><span>рейтинг в 2ГИС</span></div><div class="metric"><b>314</b><span>оценок клиентов</span></div><div class="metric"><b>35</b><span>фотографий в карточке</span></div></div>
+      </div>
+    </section>
+
+    <section class="selector" id="solutions">
+      <div class="container selector-grid">
+        <div class="selector-intro reveal"><div class="eyebrow">Подберите формат</div><h2>Что нужно сделать с балконом?</h2><p>Выберите задачу — справа появится пример реальной работы и основные решения. Стоимость рассчитывается после замера.</p>
+          <div class="choice-list" role="tablist" aria-label="Варианты решения">
+            <button class="choice active" type="button" data-solution="warm" role="tab" aria-selected="true">Тёплое остекление<small>для круглогодичного использования</small></button>
+            <button class="choice" type="button" data-solution="cold" role="tab" aria-selected="false">Холодное остекление<small>лёгкая конструкция для лоджии</small></button>
+            <button class="choice" type="button" data-solution="finish" role="tab" aria-selected="false">Отделка под ключ<small>стены, потолок, пол и хранение</small></button>
+            <button class="choice" type="button" data-solution="panoramic" role="tab" aria-selected="false">Панорамное решение<small>больше света и открытый вид</small></button>
+          </div>
+        </div>
+        <div class="solution-card reveal delay-2" aria-live="polite"><img class="solution-image" data-solution-image src="assets/case-komsomolsky.jpg" alt="Тёплое остекление лоджии"><div class="solution-body"><div class="eyebrow">Ваш сценарий</div><h3 data-solution-title>Тёплое остекление</h3><p data-solution-copy>Пластиковый профиль, утепление и аккуратная отделка — чтобы лоджия стала продолжением квартиры.</p><div class="solution-tags" data-solution-tags><span class="tag">Exprof</span><span class="tag">пеноплекс</span><span class="tag">ПВХ-панели</span></div><button class="btn btn-accent js-open-modal" type="button" style="margin-top:24px">Обсудить этот вариант ↗</button></div></div>
+      </div>
+    </section>
+
+    <section class="services" id="services"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Услуги</div><h2>Собираем решение целиком.</h2></div><p>У Пластокно есть отдельные решения для окон, балконов, лоджий, входных групп и загородных домов.</p></div><div class="service-grid">
+      <article class="service reveal"><span class="service-index">01 / 04</span><h3>Остекление балконов и лоджий</h3><p>Тёплое, холодное, пластиковое, алюминиевое и панорамное остекление.</p></article>
+      <article class="service reveal delay-1"><span class="service-index">02 / 04</span><h3>Утепление и отделка</h3><p>Комплексные решения с утеплением, стенами, потолком, полом и хранением.</p></article>
+      <article class="service reveal delay-2"><span class="service-index">03 / 04</span><h3>Окна и двери</h3><p>Пластиковые, энергосберегающие и балконные двери, входные группы.</p></article>
+      <article class="service reveal delay-3"><span class="service-index">04 / 04</span><h3>Монтаж и сервис</h3><p>Замер, расчёт, доставка, установка, сервисное обслуживание и ремонт.</p></article>
+    </div></div></section>
+
+    <section class="work-strip" id="works"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Портфолио</div><h2>Показываем результат.</h2></div><p>Фотографии из официальной галереи Пластокно. Каждый кейс подписан материалами и типом решения.</p></div><div class="work-grid"><a class="work-card reveal" href="portfolio.html#dzerzhinskogo"><img src="assets/case-dzerzhinskogo.jpg" alt="Лоджия на улице Дзержинского"><span class="work-caption"><small>Тёплое остекление · Дзержинского</small><b>Лоджия с рабочей зоной</b></span></a><a class="work-card reveal delay-1" href="portfolio.html#komsomolsky"><img src="assets/case-komsomolsky.jpg" alt="Лоджия на Комсомольском проспекте"><span class="work-caption"><small>Тёплое остекление · Комсомольский</small><b>Панели и хранение</b></span></a><a class="work-card reveal delay-2" href="portfolio.html#solnechnaya"><img src="assets/case-solnechnaya.jpg" alt="Лоджия на улице Солнечной"><span class="work-caption"><small>Холодное остекление · Солнечная</small><b>Лёгкая алюминиевая конструкция</b></span></a><a class="work-card reveal delay-3" href="portfolio.html#trashutina"><img src="assets/case-trashutina.jpg" alt="Лоджия на улице Трашутина"><span class="work-caption"><small>Тёплое остекление · Трашутина</small><b>Дерево и тёплый свет</b></span></a></div><a class="section-link" href="portfolio.html">Смотреть все работы <span>↗</span></a></div></section>
+
+    <section class="steps" id="process"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">Процесс</div><h2>Понятно на каждом этапе.</h2></div><p>Менеджер уточняет задачу, мастер делает замер, после чего вы получаете расчёт и договор с параметрами заказа.</p></div><div class="steps-grid"><div class="step reveal"><b>01</b><h3>Заявка</h3><p>Звонок, сообщение или короткая форма на сайте.</p></div><div class="step reveal delay-1"><b>02</b><h3>Консультация</h3><p>Подбор профиля, стеклопакета и вида остекления.</p></div><div class="step reveal delay-2"><b>03</b><h3>Замер</h3><p>Точные размеры и особенности проёма на объекте.</p></div><div class="step reveal delay-3"><b>04</b><h3>Изготовление</h3><p>Производство, доставка и согласованный монтаж.</p></div><div class="step reveal delay-4"><b>05</b><h3>Сервис</h3><p>Поддержка после установки и обслуживание конструкций.</p></div></div></div></section>
+
+    <section class="proof" id="reviews"><div class="container proof-grid"><div class="reveal"><div class="eyebrow">Отзывы</div><h2>Клиенты говорят о деталях.</h2><p class="muted">Подборка коротких фрагментов из отзывов в 2ГИС. Полная лента открывается по ссылке ниже.</p><div class="rating"><div class="rating-score">4,9</div><div><div class="stars">★★★★★</div><small>314 оценок · 304 отзыва</small></div></div><a class="section-link" href="https://2gis.ru/chelyabinsk/firm/70000001044016830/tab/reviews" target="_blank" rel="noopener">Открыть отзывы в 2ГИС ↗</a></div><div class="review-list"><figure class="review reveal delay-1"><p>«Всё сделали аккуратно, даже пыли почти не было».</p><footer><span>Андрей Костецкий</span><span>2ГИС</span></footer></figure><figure class="review reveal delay-2"><p>«Установили 5 окон и балконный блок за 6 часов».</p><footer><span>Владислав Талаев</span><span>2ГИС</span></footer></figure><figure class="review reveal delay-3"><p>«От замера до монтажа прошло всего пару дней».</p><footer><span>Варвара Андрюкова</span><span>2ГИС</span></footer></figure></div></div></section>
+
+    <section class="materials"><div class="container materials-grid"><div class="reveal"><div class="eyebrow">Материалы</div><h2>Подберём профиль под задачу.</h2><p>На официальном сайте компании указаны профили Exprof, KBE, Rehau, Grain и Tecoline, а также фурнитура Maco, Roto и Vorne.</p><a class="section-link" href="https://plastokno74.ru/" target="_blank" rel="noopener">Перейти на сайт компании ↗</a></div><div class="brand-cloud reveal delay-2"><span class="brand-pill">EXPROF</span><span class="brand-pill">KBE</span><span class="brand-pill">REHAU</span><span class="brand-pill">GRAIN</span><span class="brand-pill">TECOLINE</span><span class="brand-pill">MACO</span><span class="brand-pill">ROTO</span><span class="brand-pill">VORNE</span></div></div></section>
+
+    <section class="faq"><div class="container"><div class="section-head reveal"><div><div class="eyebrow">FAQ</div><h2>Вопросы до замера.</h2></div><p>Если в вашем доме нестандартный проём или нужна сложная отделка, детали лучше обсудить с менеджером.</p></div><div class="reveal"><details><summary>Как понять, какое остекление мне подходит?</summary><p>На консультации сравниваются тёплое и холодное решения, профиль, стеклопакет и будущая отделка. Итог зависит от задачи и особенностей проёма.</p></details><details><summary>Когда можно узнать точную стоимость?</summary><p>После замера компания уточняет размеры, комплектацию и особенности объекта, затем фиксирует расчёт и сроки в договоре.</p></details><details><summary>Можно ли заказать только отделку балкона?</summary><p>Да. На официальном сайте отдельно указаны услуги внутренней и внешней отделки, утепления, установки козырька и выноса остекления.</p></details><details><summary>Где посмотреть реальные работы?</summary><p>В разделе портфолио собраны фотографии из официальной галереи Пластокно с описанием использованных материалов.</p></details></div></div></section>
+
+    <section class="cta" id="contacts"><div class="container cta-grid"><div class="reveal"><div class="eyebrow">Следующий шаг</div><h2>Расскажите, каким должен стать ваш балкон.</h2><p>Оставьте задачу — менеджер уточнит детали и подскажет, какие данные нужны для замера.</p></div><div class="contact-card reveal delay-2"><div class="eyebrow">Контакты</div><a href="tel:+73512387755">8 (351) 238-77-55</a><a href="tel:+79518182970">8 (951) 818-2970</a><span>ул. Чайковского, 15 · Челябинск</span><small>Режим работы лучше уточнить перед визитом: в открытых источниках указаны разные часы.</small><div class="contact-actions"><button class="btn btn-dark js-open-modal" type="button">Оставить заявку</button><a class="btn btn-ghost" href="https://2gis.ru/chelyabinsk/firm/70000001044016830" target="_blank" rel="noopener">Маршрут</a></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="#top"><span class="brand-mark"><span>П</span></span>пластокно</a><p>Реальные работы · Челябинск<br>Сайт-концепция на основе открытых данных компании.</p></div><div class="footer-links"><a href="https://plastokno74.ru/" target="_blank" rel="noopener">Официальный сайт</a><a href="https://vk.com/74plastokno" target="_blank" rel="noopener">VK</a><a href="mailto:74plastokno@mail.ru">Email</a></div></div></footer>
+  <div class="mobile-bar"><a href="tel:+73512387755"><span>☎</span>Позвонить</a><a href="#contacts" class="js-open-modal"><span>✦</span>Написать</a><a href="https://2gis.ru/chelyabinsk/firm/70000001044016830" target="_blank" rel="noopener"><span>⌖</span>Маршрут</a></div>
+
+  <div class="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Закрыть">×</button><h3 id="modal-title">Подберём решение</h3><p>Заполните короткую форму. Мы подготовим сообщение, которое можно отправить в WhatsApp или Telegram.</p><form class="form-grid" id="lead-form"><label class="field">Ваше имя<input name="name" required placeholder="Как к вам обращаться?"></label><label class="field">Что нужно сделать<select name="service"><option>Остекление балкона или лоджии</option><option>Утепление и отделка</option><option>Окна или балконная дверь</option><option>Панорамное остекление</option><option>Пока нужна консультация</option></select></label><label class="field">Комментарий<textarea name="comment" placeholder="Например: лоджия в панельном доме, нужен тёплый вариант"></textarea></label><button class="btn btn-accent" type="submit">Сформировать сообщение ↗</button></form><div class="form-message" id="form-message">Готово. Выберите удобный канал:</div><div class="form-out" id="form-out"></div></div></div>
+
+  <script>
+    const solutionData={
+      warm:{title:'Тёплое остекление',copy:'Пластиковый профиль, утепление и аккуратная отделка — чтобы лоджия стала продолжением квартиры.',image:'assets/case-komsomolsky.jpg',alt:'Тёплое остекление лоджии на Комсомольском проспекте',tags:['Exprof','пеноплекс','ПВХ-панели']},
+      cold:{title:'Холодное остекление',copy:'Лёгкое алюминиевое решение для лоджии, когда важны свет, открытый вид и аккуратная конструкция.',image:'assets/case-solnechnaya.jpg',alt:'Холодное алюминиевое остекление лоджии на улице Солнечной',tags:['алюминий','ПВХ-панели','козырёк']},
+      finish:{title:'Отделка под ключ',copy:'Утепление, стены, потолок, пол и хранение — комплексный проект по реальной работе из Челябинска.',image:'assets/case-dzerzhinskogo.jpg',alt:'Отделка лоджии на улице Дзержинского',tags:['Atex','пеноплекс','шкаф и стол']},
+      panoramic:{title:'Панорамное решение',copy:'Больше света и открытый вид — подберём профиль и стеклопакет под конкретный проём.',image:'assets/case-trashutina.jpg',alt:'Тёплая лоджия с большими окнами на улице Трашутиной',tags:['Gealan','вагонка','электрика']}
+    };
+    const qs=(s,e=document)=>e.querySelector(s), qsa=(s,e=document)=>[...e.querySelectorAll(s)];
+    const modal=qs('.modal');
+    const openModal=()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';setTimeout(()=>qs('input',modal)?.focus(),120)};
+    const closeModal=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''};
+    qsa('.js-open-modal').forEach(btn=>btn.addEventListener('click',e=>{if(btn.tagName==='A')e.preventDefault();openModal()}));
+    qs('.modal-close').addEventListener('click',closeModal); modal.addEventListener('click',e=>{if(e.target===modal)closeModal()}); document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+    qsa('.choice').forEach(btn=>btn.addEventListener('click',()=>{qsa('.choice').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});btn.classList.add('active');btn.setAttribute('aria-selected','true');const d=solutionData[btn.dataset.solution];qs('[data-solution-image]').src=d.image;qs('[data-solution-image]').alt=d.alt;qs('[data-solution-title]').textContent=d.title;qs('[data-solution-copy]').textContent=d.copy;qs('[data-solution-tags]').innerHTML=d.tags.map(t=>`<span class="tag">${t}</span>`).join('');}));
+    const form=qs('#lead-form'), formMsg=qs('#form-message'), formOut=qs('#form-out');
+    form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);const name=data.get('name');const service=data.get('service');const comment=data.get('comment');const text=`Здравствуйте! Меня зовут ${name}. Хочу обсудить: ${service}. ${comment||''}`.trim();const wa=`https://wa.me/79518182970?text=${encodeURIComponent(text)}`;const tg=`https://t.me/share/url?url=${encodeURIComponent('https://plastokno74.ru/')}&text=${encodeURIComponent(text)}`;formMsg.classList.add('show');formOut.innerHTML=`<a class="btn btn-dark" target="_blank" rel="noopener" href="${wa}">Открыть WhatsApp ↗</a><a class="btn btn-ghost" target="_blank" rel="noopener" href="${tg}">Открыть Telegram ↗</a>`});
+    const header=qs('#site-header'), progress=qs('.progress i');
+    const onScroll=()=>{header.classList.toggle('scrolled',scrollY>18);const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${h>0?(scrollY/h)*100:0}%`}; addEventListener('scroll',onScroll,{passive:true});onScroll();
+    const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target)}}),{threshold:.12});qsa('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
